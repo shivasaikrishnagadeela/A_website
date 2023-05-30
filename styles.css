@@ -1,85 +1,17 @@
-/* Reset default margin and padding */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 /* Set the body font and background color */
 body {
   font-family: Arial, sans-serif;
   background-color: #f2f2f2;
   color: #333;
+  margin: 0;
+  padding: 0;
 }
-.ele
-{
-  margin-left : 25%;
-  margin-top: 0.5%;
-  font-weight: bold;
-  font-size: 19px;
-}
-#about
-{
-  padding-left: 4.3%;
-}
-#contact
-{
-  padding-left: 5%;
-}
-#header_tit
-{
-  padding-left: 1.9%;
-  /* font-size: 25px; */
-}
-#imag
-{
-  height: 250px;
-  border-radius: 50%;
-  
-}
-#lastin1
-{
-  font-size: 60px;
-  font-weight: bold;
-  position: absolute;
-  margin-top: 20px;
-  margin-left: 150px;
-  display: inline;
-  align-items: center;
-  justify-content: center;
-}
-#lastin2
-{
-  position: absolute;
-  font-weight: bold;
-
-  margin-top: 120px;
-  margin-left: 150px;
-  font-size: 60px;
-  display: inline-block;
-  align-items: center;
-  justify-content: center;
-}
-#home_dis
-{
-  font-size: 60px;
-}
-#home
-{
-  /* background-image: url(https://images.pexels.com/photos/2219024/pexels-photo-2219024.jpeg?auto=compress&cs=tinysrgb&w=1200); */
-  font-size: 82px;
-  width: 100vw;
-  height: 100vh;
-  padding-top: 5%;
-  padding-left: 5%;
-  /* margin-top: 20px; */
-
-}
-
 
 /* Header styles */
 header {
   display: flex;
+  align-items: center;
+  justify-content: space-between;
   background-color: #fff;
   padding: 20px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -87,14 +19,15 @@ header {
 
 header h1 {
   color: #333;
+  font-size: 24px;
 }
 
 nav ul {
   list-style-type: none;
+  display: flex;
 }
 
 nav ul li {
-  display: inline-block;
   margin-right: 10px;
 }
 
@@ -105,10 +38,8 @@ nav ul li a {
 
 /* Main section styles */
 section {
-  /* font-size: 300px; */
   padding: 20px;
   background-color: #fff;
-  margin-bottom: 20px;
 }
 
 section h2 {
@@ -121,50 +52,59 @@ section p {
   line-height: 1.5;
 }
 
-/* Services section styles */
-/* section#services ul li {
-  color: #333;
-  margin-bottom: 10px;
-} */
-#services
-{
+/* Home section styles */
+section#home {
 
-  Padding-left: 4%;
+  padding-left: 5%;
 }
-section#services ul {
+
+#home_dis {
+  font-size: 40px;
+}
+
+/* Services section styles */
+#services ul {
   color: #333;
   margin-bottom: 10px;
   font-size: 20px;
 }
+
 /* Portfolio section styles */
 .gallery {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .gallery img {
-  width: calc(33.33% - 10px);
+  width: 100%;
+  max-width: 400px;
+  height: auto;
   margin-bottom: 10px;
 }
 
 /* Contact section styles */
-section#contact form input,
-section#contact form textarea {
-  width: 100%;
-  padding: 10px;
-  margin-bottom: 10px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
+section#contact {
+  text-align: center;
+  padding: 20px;
 }
 
-section#contact form button {
-  background-color: #333;
-  color: #fff;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
+#imag {
+  max-width: 250px;
+  height: auto;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+#home
+{
+  font-size: 50px;
+  align-items: center;
+  padding: 20px;
+}
+
+#lastin1,
+#lastin2 {
+  font-size: 24px;
 }
 
 /* Footer styles */
@@ -174,4 +114,3 @@ footer {
   background-color: #fff;
   color: #777;
 }
-
